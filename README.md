@@ -79,12 +79,90 @@ To generate Indian names using sequence models and compare their performance.
 
 ## How to Run
 
-### Problem 1
-```bash
-cd problem1_word2vec
-python run.py
+**Problem 1**  
+
+---
 
 ## 📌 Overview
+
+This project focuses on learning word embeddings from IIT Jodhpur textual data using Word2Vec models. The goal is to capture semantic relationships between words and analyze how well the embeddings represent domain-specific concepts.
+
+---
+
+## 🎯 Objective
+
+- Train Word2Vec models:
+  - Continuous Bag of Words (CBOW)  
+  - Skip-gram with Negative Sampling  
+
+- Analyze embeddings using:
+  - Cosine similarity  
+  - Word analogies  
+
+- Visualize embeddings using dimensionality reduction  
+
+---
+
+## 📂 Folder Structure
+
+
+problem1_word2vec/
+│
+├── data/
+│ ├── raw/ # PDFs / text files
+│ └── processed/ # Cleaned corpus
+│
+├── outputs/
+│ ├── models/ # Trained models
+│ ├── plots/ # t-SNE, WordCloud
+│ └── results/ # neighbors, analogies
+│
+├── preprocess.py
+├── train.py
+├── evaluate.py
+├── visualize.py
+└── run.py
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Create virtual environment
+
+```bash
+python -m venv .venv
+2. Activate environment
+.venv\Scripts\activate
+3. Install dependencies
+pip install gensim nltk matplotlib scikit-learn wordcloud PyPDF2
+📊 Dataset
+Text collected from IIT Jodhpur sources:
+Official website
+Academic regulations
+Course syllabus
+Stored in: data/raw/
+Processed into: data/processed/corpus.txt
+🔧 Preprocessing
+Remove special characters and unwanted text
+Convert to lowercase
+Sentence tokenization
+Word tokenization
+Remove stopwords
+Filter short tokens
+🚀 How to Run
+Step 1: Preprocess data
+python preprocess.py
+Step 2: Train models
+python train.py
+Step 3: Evaluate embeddings
+python evaluate.py
+Step 4: Visualize embeddings
+python visualize.py
+(Optional) Run full pipeline
+python run.py
+
+**Problem 2**  
 
 This project focuses on generating Indian names at the **character level** using different recurrent neural network architectures. The goal is to design, implement, and compare multiple sequence models and evaluate their ability to produce realistic names.
 
@@ -104,10 +182,6 @@ This project focuses on generating Indian names at the **character level** using
 - Perform qualitative analysis of generated names  
 
 ---
-
-## 📂 Folder Structure
-
-
 problem_2/
 │
 ├── data/
