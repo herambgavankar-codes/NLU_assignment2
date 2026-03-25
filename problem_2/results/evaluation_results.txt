@@ -1,0 +1,17 @@
+=== Evaluation Results ===
+
+Model          : Vanilla RNN
+Generated Count: 100
+Novelty Rate   : 98.00%
+Diversity      : 1.0000
+----------------------------------------
+Model          : BLSTM
+Generated Count: 96
+Novelty Rate   : 100.00%
+Diversity      : 0.8333
+----------------------------------------
+Model          : Attention RNN
+Generated Count: 98
+Novelty Rate   : 100.00%
+Diversity      : 0.9592
+----------------------------------------

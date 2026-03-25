@@ -1,0 +1,26 @@
+# Core
+numpy
+pandas
+tqdm
+
+# NLP (Problem 1)
+gensim
+nltk
+wordcloud
+
+# Visualization
+matplotlib
+scikit-learn
+seaborn
+
+# Deep Learning (Problem 2)
+torch
+torchvision
+torchaudio
+
+# Optional (useful utilities)
+jupyter
+ipykernel
+
+# Text processing
+regex
